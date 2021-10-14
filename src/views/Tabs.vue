@@ -2,7 +2,7 @@
   <ion-page>
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
-      <ion-tab-bar slot="bottom">
+      <ion-tab-bar slot="bottom" class="ion-tab-bar">
         <ion-tab-button tab="tab1" href="/tabs/tab1">
           <ion-icon :icon="triangle" />
           <ion-label>Tab 1</ion-label>
@@ -38,3 +38,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.ion-tab-bar {
+  --background: none;
+  --border: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--ion-tab-bar-height);
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <ion-app>
+  <ion-app class="app">
     <ion-router-outlet />
   </ion-app>
 </template>
@@ -16,3 +16,10 @@ export default defineComponent({
   }
 });
 </script>
+
+<style>
+.app {
+  --ion-background-color: orange;
+  --ion-tab-bar-height: 60px;
+}
+</style>
